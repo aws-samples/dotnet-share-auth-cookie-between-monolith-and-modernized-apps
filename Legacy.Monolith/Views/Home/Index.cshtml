@@ -1,0 +1,26 @@
+﻿@{
+  ViewBag.Title = "Home";
+}
+
+<div>
+  <h2>Welcome Home</h2>
+</div>
+<div class="row">
+  @Html.ActionLink("Call Monolith Backend - Service A (requires login)", "Index", "ServiceA", new { area = "" }, new { @class = "navbar-brand" })
+</div>
+<div class="row">
+  @Html.ActionLink("Call Monolith Backend - Service B (requires login)", "Index", "ServiceB", new { area = "" }, new { @class = "navbar-brand" })
+</div>
+
+<div class="row">
+    @Html.ActionLink("Call Modernized Backend - Service A  (requires login)", "Index", "ModernizedServiceA", new { area = "" }, new { @class = "navbar-brand" })
+</div>
+
+<div class="row">
+    @Html.ActionLink("Call Modernized Backend - Service B (requires login)", "Index", "ModernizedServiceB", new { area = "" }, new { @class = "navbar-brand" })
+</div>
+
+<hr/>
+<div>
+    FYI: the user credentials are shown on the login page.
+</div>

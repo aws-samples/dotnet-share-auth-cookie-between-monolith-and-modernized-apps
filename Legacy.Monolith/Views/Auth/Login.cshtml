@@ -1,0 +1,20 @@
+﻿@model Legacy.Monolith.LoginModel
+
+@{
+  ViewBag.Title = "Log In";
+}
+
+<h2>Log In</h2>
+
+<p>un=admin@admin.com; pw=admin</p>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+  @Html.EditorForModel()
+
+  <p>
+    <button type="submit">Log In</button>
+  </p>
+}
