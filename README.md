@@ -1,6 +1,6 @@
 ## Summary
 
-These sample project will demonstrate the usage of a <em>Shared Auth Cookie</em> approach for seamless authentication across a monolith and its modernized version (e.g. monolith.example.com <--> modernized.example.com). 
+These sample projects will demonstrate the usage of a <em>Shared Auth Cookie</em> approach for seamless authentication between a monolith and its modernized version (e.g. monolith.example.com <--> modernized.example.com). 
 
 This code repository will provide 1/ The steps to configure a shared cookie-based authentication, 2/ Sample projects demonstrating the shared auth cookie usage; semless auth between the legacy monolith ASP.NET and its modernized ASP.NET Core version, and 3/ An approach to store the cookie encryption/decryption key that's accessible by legacy monolith and its modernized version.
 
