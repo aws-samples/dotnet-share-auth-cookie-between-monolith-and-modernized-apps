@@ -7,6 +7,7 @@
 2. Ensure you've a custom domain and have the permissions to add 'A' records.  For example, http://monolith.example.com and http://modernized.example.com.
 3. Ensure the modernized ServiceA and ServiceB docker images are available in the AWS Elastic Container Registry (ECR).  For Service* specific ECR repo name, please reference the 'InfrastructureConfigs.cs' file.
     - Each ```Modernized.Backend.Service*``` project had Dockerfile that you can use to build the image and upload to the ECR.
+    > Before building the docker image, please ensure the <em>SharedCookieName<em> property in the appsettings.json file reflects your domain.
 4. Create a SSM Parameter store access policy.
 
   > For demo only, the ```Reource: *``` policy scope works.  However, it's good practice to keep the policy's scope specific to a resource.  So feel free to adjust it.
